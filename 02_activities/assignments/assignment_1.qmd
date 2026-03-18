@@ -190,7 +190,7 @@ print(plot1)
 geno_q2_rec <- geno_q2
 
 # Convert the rs1861_C column to recessive coding
-geno_q2_rec$rs1861_C <- ifelse(geno_q2_rec$rs1861_C == 2, 1, 0)
+geno_q2_rec$rs1861_C <- ifelse(geno_q2_rec$rs1861_C == 0, 1, 0)
 table(geno_q2_rec$rs1861_C)
 ```
 
